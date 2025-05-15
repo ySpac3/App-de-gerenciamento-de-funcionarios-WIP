@@ -1,0 +1,35 @@
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\App Dashboard.exe.config
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\App Dashboard.exe
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\App Dashboard.pdb
+E:\Program Projects\C#\App Dashboard\App Dashboard\obj\Debug\App Dashboard.csproj.AssemblyReference.cache
+E:\Program Projects\C#\App Dashboard\App Dashboard\obj\Debug\App_Dashboard.Properties.Resources.resources
+E:\Program Projects\C#\App Dashboard\App Dashboard\obj\Debug\App Dashboard.csproj.GenerateResource.cache
+E:\Program Projects\C#\App Dashboard\App Dashboard\obj\Debug\App Dashboard.csproj.CoreCompileInputs.cache
+E:\Program Projects\C#\App Dashboard\App Dashboard\obj\Debug\App Dashboard.exe
+E:\Program Projects\C#\App Dashboard\App Dashboard\obj\Debug\App Dashboard.pdb
+E:\Program Projects\C#\App Dashboard\App Dashboard\obj\Debug\App_Dashboard.Form1.resources
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\CsvHelper.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\Microsoft.Bcl.HashCode.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Buffers.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Memory.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Numerics.Vectors.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\CsvHelper.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\Microsoft.Bcl.HashCode.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Buffers.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Memory.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Numerics.Vectors.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\obj\Debug\App Dash.8463DAF5.Up2Date
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.IO.Pipelines.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Text.Encodings.Web.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Text.Json.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.ValueTuple.dll
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.IO.Pipelines.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Text.Encodings.Web.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.Text.Json.xml
+E:\Program Projects\C#\App Dashboard\App Dashboard\bin\Debug\System.ValueTuple.xml
