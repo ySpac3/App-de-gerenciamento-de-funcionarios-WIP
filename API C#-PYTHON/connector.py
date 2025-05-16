@@ -29,7 +29,7 @@ def  get_login_data(dict) -> bool:
         password=password,
         database='bdlogins'
     )
-    query = 'SELECT * FROM tbloginsellers'
+    query = 'SELECT name,password,cdg FROM tbloginsellers'
 
     df = pd.read_sql(query,connection)
     mask = pd.Series(True,index=df.index)
@@ -43,5 +43,36 @@ def  get_login_data(dict) -> bool:
 
     return bool(response)
 
+def updade_login_status(dict,mode):
+    if mode == 1:
+        connection = mysql.connector.connect(
+        host=host,
+        user=user,
+        password=password,
+        database='bdlogins'
+    )
+    cursor = connection.cursor()
+    command = "UPDATE tbsellerstatus SET status = %s WHERE name = %s and cdg = %s"
+    params = ("ATIVO",dict["name"],dict["cdg"])
+
+    cursor.execute(command,params)
+    connection.commit()
+
+    cursor.close()
+    connection.close()
+
+def get_seller_status():
+        connection = mysql.connector.connect(
+        host=host,
+        user=user,
+        password=password,
+        database='bdlogins'
+    )
+        query = 'SELECT name,status,cdg from tbsellerstatus'
+        df = pd.read_sql(query,connection)
+
+        connection.close()
+
+        return df.to_dict(orient="records")
 
 

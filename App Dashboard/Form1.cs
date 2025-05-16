@@ -12,6 +12,7 @@ using CsvHelper;
 using System.Globalization;
 using System.Net.Http;
 using System.Text.Json;
+using static System.Net.WebRequestMethods;
 
 namespace App_Dashboard
 {
@@ -22,7 +23,19 @@ namespace App_Dashboard
             InitializeComponent();
             // Lendo o Arquivo csv
             _ = LoadSellsFromHttp();
+            _ = RunStatusLoopAsync();
+                
+                
 
+        }
+        private async Task RunStatusLoopAsync()
+        {
+            while (true)
+            {
+                PnSellerStatus.Controls.Clear();
+                await LoadSellersStatusFromHttp();
+                await Task.Delay(60*1000);  
+            }
         }
         private async Task LoadSellsFromHttp()
         {
@@ -41,7 +54,7 @@ namespace App_Dashboard
                 int y = 0;
                 foreach(var sold in sells)
                 {
-                    y = Sell.Sold(sold.Seller, sold.Buyer, sold.Kit, sold.Date, sold.Value.ToString(), sold.Comission.ToString(), sold.Profit.ToString(), 6, y, PnSellCommits);
+                    y = Sell.Sold(sold.Seller, sold.Buyer, sold.Kit, sold.Date, sold.Value.ToString("F2"), sold.Comission.ToString("F2"), sold.Profit.ToString("F2"), 6, y, PnSellCommits);
 
                 }
 
@@ -51,6 +64,21 @@ namespace App_Dashboard
 
             }
         }
+        private async Task LoadSellersStatusFromHttp()
+        {
+            HttpClient client = new HttpClient();
+            string url = "http://127.0.0.1:5000/status";
+            string json = await client.GetStringAsync(url);
+            List<SellerStatus> status = JsonSerializer.Deserialize<List<SellerStatus>>(json);
+            
+            int y = 0;
+            foreach(var seller in status)
+            {
+                y = SellerStatus.State(seller.name, seller.status,6,y,PnSellerStatus);
+            }
+
+        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,7 +86,6 @@ namespace App_Dashboard
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
             
                 
             

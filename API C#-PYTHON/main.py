@@ -13,8 +13,15 @@ def sells():
 def login():
     login = request.json
     response = get_login_data(login)
-    print(login)
+    if response == True:
+        dt = {"name":login["name"],"cdg":login["cdg"]}
+        updade_login_status(dt,1)
     return jsonify(response)
+
+@app.route('/status', methods=['GET'])
+def status():
+    status = get_seller_status()
+    return jsonify(status)
 
 if __name__ == '__main__':
     app.run()
