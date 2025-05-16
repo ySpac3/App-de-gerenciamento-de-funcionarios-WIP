@@ -70,6 +70,9 @@
             this.ClientSize = new System.Drawing.Size(464, 441);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(480, 480);
+            this.MinimumSize = new System.Drawing.Size(480, 480);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

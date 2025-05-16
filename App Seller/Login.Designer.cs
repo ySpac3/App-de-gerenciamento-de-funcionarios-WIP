@@ -28,22 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.tbName = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tbPassword = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.tbCdg = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox4
+            // tbName
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(175, 186);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(200, 32);
-            this.richTextBox4.TabIndex = 0;
-            this.richTextBox4.Text = "";
+            this.tbName.Font = new System.Drawing.Font("Tahoma", 16.25F, System.Drawing.FontStyle.Bold);
+            this.tbName.Location = new System.Drawing.Point(175, 186);
+            this.tbName.Multiline = false;
+            this.tbName.Name = "tbName";
+            this.tbName.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.tbName.Size = new System.Drawing.Size(200, 32);
+            this.tbName.TabIndex = 0;
+            this.tbName.Text = "";
+            this.tbName.WordWrap = false;
             // 
             // label3
             // 
@@ -56,13 +60,17 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "NOME:";
             // 
-            // richTextBox1
+            // tbPassword
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(175, 240);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(200, 32);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.tbPassword.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.Location = new System.Drawing.Point(175, 240);
+            this.tbPassword.Multiline = false;
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.tbPassword.Size = new System.Drawing.Size(200, 32);
+            this.tbPassword.TabIndex = 0;
+            this.tbPassword.Text = "";
+            this.tbPassword.WordWrap = false;
             // 
             // label1
             // 
@@ -76,13 +84,17 @@
             this.label1.Text = "SENHA:";
             this.label1.Click += new System.EventHandler(this.label2_Click);
             // 
-            // richTextBox2
+            // tbCdg
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(175, 294);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(200, 32);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
+            this.tbCdg.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCdg.Location = new System.Drawing.Point(175, 294);
+            this.tbCdg.Multiline = false;
+            this.tbCdg.Name = "tbCdg";
+            this.tbCdg.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.tbCdg.Size = new System.Drawing.Size(200, 32);
+            this.tbCdg.TabIndex = 0;
+            this.tbCdg.Text = "";
+            this.tbCdg.WordWrap = false;
             // 
             // label2
             // 
@@ -121,9 +133,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.richTextBox4);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.tbCdg);
+            this.Controls.Add(this.tbPassword);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(480, 480);
+            this.MinimumSize = new System.Drawing.Size(480, 480);
             this.Name = "Login";
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
@@ -135,11 +150,11 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox tbName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox tbPassword;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox tbCdg;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLogar;
     }

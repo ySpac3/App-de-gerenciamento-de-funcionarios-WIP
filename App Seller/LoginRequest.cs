@@ -11,9 +11,9 @@ namespace App_Seller
 {
     public class LoginRequest
     {
-        public async Task<string> LoginR(string Name,string Password,string Cdg)
+        public async Task<string> LoginR(string Name,string Password,int Cdg)
         {
-            var login = new { name = Name, password = Cdg, csg = Cdg };
+            var login = new { name = Name, password = Password, cdg = Cdg };
             var json = JsonSerializer.Serialize(login);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 

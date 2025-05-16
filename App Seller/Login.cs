@@ -26,7 +26,7 @@ namespace App_Seller
         }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
-        {
+        {   
             _form1.Show();
             this.Close();
         }
@@ -39,8 +39,11 @@ namespace App_Seller
         private async void btnLogar_Click(object sender, EventArgs e)
         {
             LoginRequest request = new LoginRequest();
-            string result = await request.LoginR("C", "D", "B");
-
+            string name = tbName.Text;
+            string password = tbPassword.Text;
+            int Cdg = int.Parse(tbCdg.Text);
+            string result = await request.LoginR(name, password, Cdg);
+                
             MessageBox.Show(result);
         }
     }
