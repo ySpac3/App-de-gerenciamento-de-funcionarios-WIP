@@ -1,0 +1,32 @@
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\App Seller.exe.config
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\App Seller.exe
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\App Seller.pdb
+E:\Program Projects\C#\App Seller\App Seller\obj\Debug\App Seller.csproj.AssemblyReference.cache
+E:\Program Projects\C#\App Seller\App Seller\obj\Debug\App_Seller.Form1.resources
+E:\Program Projects\C#\App Seller\App Seller\obj\Debug\App_Seller.Login.resources
+E:\Program Projects\C#\App Seller\App Seller\obj\Debug\App_Seller.Properties.Resources.resources
+E:\Program Projects\C#\App Seller\App Seller\obj\Debug\App Seller.csproj.GenerateResource.cache
+E:\Program Projects\C#\App Seller\App Seller\obj\Debug\App Seller.csproj.CoreCompileInputs.cache
+E:\Program Projects\C#\App Seller\App Seller\obj\Debug\App Seller.exe
+E:\Program Projects\C#\App Seller\App Seller\obj\Debug\App Seller.pdb
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Buffers.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.IO.Pipelines.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Memory.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Numerics.Vectors.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Text.Encodings.Web.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Text.Json.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.ValueTuple.dll
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Buffers.xml
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.IO.Pipelines.xml
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Memory.xml
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Numerics.Vectors.xml
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Text.Encodings.Web.xml
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Text.Json.xml
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Program Projects\C#\App Seller\App Seller\bin\Debug\System.ValueTuple.xml
+E:\Program Projects\C#\App Seller\App Seller\obj\Debug\App Seller.csproj.Up2Date
