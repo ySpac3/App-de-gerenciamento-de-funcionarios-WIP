@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,10 @@ namespace App_Dashboard
         public string name { get; set; }
         public string status { get; set; }
         public int cdg { get; set; }
-
+        private static string limit(string text, int limit)
+        {
+            return text.Length > limit ? text.Substring(0, limit) + "..." : text;
+        }
         public static int State(string Seller, string Status, int x, int y, Panel painel)
         {
             
@@ -24,8 +28,8 @@ namespace App_Dashboard
             {
 
                 System.Windows.Forms.Label label = new System.Windows.Forms.Label();
-
-                label.Text = name;
+                
+                label.Text = limit(name,10);
 
                 label.Font = new Font(label.Font.FontFamily, 18);
                 label.ForeColor = Color.White;

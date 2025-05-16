@@ -2,6 +2,7 @@
 import mysql.connector
 import pandas as pd
 import json
+from sqlalchemy import create_engine
 
 host = ''
 user = ''
@@ -9,29 +10,25 @@ password=''
 
 
 def get_sell_data():
-    connection = mysql.connector.connect(
-        host=host,
-        user=user,
-        password=password,
-        database='bdvendas'
-    )
-    query = 'SELECT * from tbvendas'
-    df = pd.read_sql(query,connection)
+    url = f'mysql+mysqlconnector://{user}:{password}@{host}/bdvendas'
 
-    connection.close()
+    engine = create_engine(url)
+
+    query = 'SELECT * from tbvendas'
+    df = pd.read_sql(query,engine)
+
+    engine.dispose()
 
     return df.to_dict(orient="records")
 
 def  get_login_data(dict) -> bool:
-    connection = mysql.connector.connect(
-        host=host,
-        user=user,
-        password=password,
-        database='bdlogins'
-    )
+    url = f'mysql+mysqlconnector://{user}:{password}@{host}/bdvendas'
+
+    engine = create_engine(url)
+
     query = 'SELECT name,password,cdg FROM tbloginsellers'
 
-    df = pd.read_sql(query,connection)
+    df = pd.read_sql(query,engine)
     mask = pd.Series(True,index=df.index)
     
     for key,value in dict.items():
@@ -39,39 +36,34 @@ def  get_login_data(dict) -> bool:
 
     response = mask.any()
 
-    connection.close()
+    engine.dispose()
 
     return bool(response)
 
 def updade_login_status(dict,mode):
     if mode == 1:
-        connection = mysql.connector.connect(
-        host=host,
-        user=user,
-        password=password,
-        database='bdlogins'
-    )
-    cursor = connection.cursor()
-    command = "UPDATE tbsellerstatus SET status = %s WHERE name = %s and cdg = %s"
-    params = ("ATIVO",dict["name"],dict["cdg"])
+        url = f'mysql+mysqlconnector://{user}:{password}@{host}/bdlogins'
 
-    cursor.execute(command,params)
-    connection.commit()
+        engine = create_engine(url)
 
-    cursor.close()
-    connection.close()
+        
+        command = "UPDATE tbsellerstatus SET status = :status WHERE name = :name and cdg = :cdg"
+        params = {"status":"ATIVO","name":dict["name"],"cdg":dict["cdg"]}
+        
+        with engine.connect() as conn:
+            with conn.begin():
+                conn.execute(command,params)
+
+    engine.dispose()
 
 def get_seller_status():
-        connection = mysql.connector.connect(
-        host=host,
-        user=user,
-        password=password,
-        database='bdlogins'
-    )
-        query = 'SELECT name,status,cdg from tbsellerstatus'
-        df = pd.read_sql(query,connection)
+        url = f'mysql+mysqlconnector://{user}:{password}@{host}/bdlogins'
 
-        connection.close()
+        engine = create_engine(url)
+        query = 'SELECT name,status,cdg from tbsellerstatus'
+        df = pd.read_sql(query,engine)
+
+        engine.dispose()
 
         return df.to_dict(orient="records")
 
